@@ -88,7 +88,8 @@ h2 {
     padding: 0 1rem;
 }
 
-input[type="email"] {
+input[type="email"],
+input[type="text"] {
     width: 100%;
     max-width: 320px;
     padding: 0.9rem 1.5rem;
@@ -101,7 +102,17 @@ input[type="email"] {
     text-align: center;
 }
 
-input[type="email"]:focus {
+input.optional {
+    opacity: 0.8;
+    border-color: rgba(68, 68, 68, 0.7);
+}
+
+input.optional::placeholder {
+    opacity: 0.6;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
     outline: none;
     border-color: var(--accent-color);
 }
@@ -225,6 +236,82 @@ button:hover::after {
     text-decoration-color: rgba(255, 255, 255, 0.8);  // Added opacity to hover underline
 }
 
+.team {
+    max-width: 800px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.team-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+    display: inline-block;
+    position: relative;
+}
+
+.team-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: var(--highlight-color);
+    opacity: 0.7;
+}
+
+.team-member {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.member-name {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.member-role {
+    font-size: 1.2rem;
+    color: var(--highlight-color);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.member-bio {
+    font-size: 1.2rem;
+    color: #999;
+    line-height: 1.4;
+}
+
+.member-bio a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease;
+}
+
+.member-bio a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration-style: solid;
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
+.section-divider {
+    max-width: 600px;
+    margin: 6rem auto;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -274,5 +361,27 @@ button:hover::after {
 
     main {
         margin: 5rem auto;  // Increased from 4rem
+    }
+
+    .team {
+        margin: 4rem auto;
+    }
+    
+    .team-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .member-name {
+        font-size: 1.5rem;
+    }
+    
+    .member-role,
+    .member-bio {
+        font-size: 1.1rem;
+    }
+
+    .section-divider {
+        margin: 4rem auto;
     }
 }
