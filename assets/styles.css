@@ -151,6 +151,80 @@ button:hover::after {
     opacity: 1;
 }
 
+.approach {
+    max-width: 800px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+    text-align: left;
+    position: relative;
+}
+
+.approach-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: var(--text-color);
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.approach-accent {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: var(--highlight-color);
+    opacity: 0.7;
+}
+
+.approach-content {
+    color: #999;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.approach-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.approach-number {
+    color: var(--highlight-color);
+    opacity: 0.7;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-top: 0.2rem;
+}
+
+.approach-item p {
+    margin: 0;
+    flex: 1;
+}
+
+.contact-section {
+    margin: 5rem auto;
+}
+
+.approach-content p {
+    margin-bottom: 2rem;
+}
+
+.approach-content a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.approach-content a:hover {
+    opacity: 0.8;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -173,5 +247,26 @@ button:hover::after {
 
     .top-notch {
         justify-content: flex-start;
+    }
+
+    .approach {
+        margin: 4rem auto;
+    }
+    
+    .approach-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .approach-content {
+        font-size: 1rem;
+    }
+
+    .approach-item {
+        gap: 1rem;
+    }
+    
+    .approach-number {
+        font-size: 0.8rem;
     }
 }
