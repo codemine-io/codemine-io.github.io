@@ -41,28 +41,28 @@ body {
 
 main {
     max-width: 800px;
-    margin: 7rem auto;  // Increased from 5rem
+    margin: 12rem auto;  // Increased from 5rem
     padding: 0 2rem;
     text-align: center;
     opacity: 0.9;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 1.5rem;
     color: var(--text-color);
     letter-spacing: -1px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.2;
+    line-height: 0.8;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: normal;
     color: #999;
-    margin-bottom: 5rem;  // Increased from 3.5rem
+    margin-bottom: 5rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -194,6 +194,8 @@ button:hover::after {
     margin: 0;
     position: relative;
     padding: 0.9rem 0;
+    font-weight: 350;
+    font-size: 1.3rem;
 }
 
 .approach-item p {
@@ -206,20 +208,20 @@ button:hover::after {
 }
 
 .approach-content a {
-    color: rgba(255, 255, 255, 0.9);  // Closer to white
+    color: rgba(255, 255, 255, 0.7);  // Reduced from 0.9
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-thickness: 1px;    // Thinner underline
-    text-underline-offset: 2px;
-    text-decoration-color: rgba(255, 255, 255, 0.8);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;      // Increased from 2px
+    text-decoration-color: rgba(255, 255, 255, 0.6);  // Reduced from 0.8
     transition: all 0.2s ease;
-    font-weight: normal;
+    /* font-weight: 300; */
 }
 
 .approach-content a:hover {
-    color: white;
-    text-decoration-style: solid;      // Solid line on hover
-    text-decoration-color: white;
+    color: rgba(255, 255, 255, 0.9);  // Added opacity to hover state
+    text-decoration-style: solid;
+    text-decoration-color: rgba(255, 255, 255, 0.8);  // Added opacity to hover underline
 }
 
 @media (max-width: 768px) {
