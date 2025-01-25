@@ -19,16 +19,6 @@ body {
     padding-bottom: 8rem;
 }
 
-section h2 {
-    text-align: center;
-    margin-bottom: 2.5rem;
-    color: var(--brighter-text-color);
-    display: inline-block;
-    position: relative;
-    font-weight: 600;
-    font-size: 4rem;
-}
-
 .top-notch {
     display: flex;
     justify-content: center;
@@ -70,22 +60,132 @@ main h1 {
     line-height: 0.8;
 }
 
-main h2 {
+p {
     font-size: 2rem;
     font-weight: 400;
     color: #999;
     margin-top: 0rem;
     margin-bottom: 1rem;
-    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 600px;
     line-height: 1.1;
+}
+
+main p {
+    font-size: 2rem;
+}
+
+section {
+    opacity: 0.4;
 }
 
 .highlight {
     color: var(--highlight-color);
     font-weight: 500;
     opacity: 0.95;
+}
+
+hr.section-divider {
+    max-width: 600px;
+    margin: 12rem auto;
+    padding: 0;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    color: var(--brighter-text-color);
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: var(--highlight-color);
+    opacity: 0.7;
+}
+
+section a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease;
+}
+
+section a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration-style: solid;
+    text-decoration-color: rgba(255, 255, 255, 0.8) hover underline;
+}
+
+.contact-section {
+    margin: 4rem auto;
+}
+
+.team-member {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 0rem;
+}
+
+.member-name {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.member-role {
+    font-size: 1.4rem;
+    color: var(--highlight-color);
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-weight: 400;
+}
+
+.member-bio {
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: #999;
+    line-height: 1.3;
+}
+
+.member-bio a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease;
+}
+
+.member-bio a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration-style: solid;
+    text-decoration-color: rgba(255, 255, 255, 0.8);
 }
 
 .contact-form {
@@ -175,139 +275,6 @@ button:hover::after {
     opacity: 1;
 }
 
-.approach {
-    max-width: 800px;
-    margin: 4rem auto;
-    padding: 0 2rem;
-    text-align: center;
-}
-
-.approach-title::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 2px;
-    background-color: var(--highlight-color);
-    opacity: 0.7;
-}
-
-section .content {
-    color: #999;
-    line-height: 1.2;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    font-weight: 350;
-    font-size: 1.4rem;
-}
-
-section .content a {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-    text-decoration-color: rgba(255, 255, 255, 0.6);
-    transition: all 0.2s ease;
-}
-
-section .content a:hover {
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration-style: solid;
-    text-decoration-color: rgba(255, 255, 255, 0.8) hover underline;
-}
-
-.approach-item {
-    display: block;
-    margin: 0;
-    position: relative;
-    margin-bottom: 2rem;
-}
-
-.approach-item p {
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-.contact-section {
-    margin: 4rem auto;
-}
-
-.team {
-    max-width: 800px;
-    margin: 4rem auto;
-    padding: 0 2rem;
-    text-align: center;
-}
-
-.team-title::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 2px;
-    background-color: var(--highlight-color);
-    opacity: 0.7;
-}
-
-.team-member {
-    max-width: 600px;
-    margin: 0 auto;
-    padding-top: 0rem;
-}
-
-.member-name {
-    font-size: 1.8rem;
-    color: var(--text-color);
-    margin-top: 0;
-    margin-bottom: 0.2rem;
-    font-weight: 500;
-}
-
-.member-role {
-    font-size: 1.4rem;
-    color: var(--highlight-color);
-    margin-top: 0;
-    margin-bottom: 0.4rem;
-    font-weight: 400;
-}
-
-.member-bio {
-    font-size: 1.4rem;
-    margin-top: 0;
-    color: #999;
-    line-height: 1.3;
-}
-
-.member-bio a {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-    text-decoration-color: rgba(255, 255, 255, 0.6);
-    transition: all 0.2s ease;
-}
-
-.member-bio a:hover {
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration-style: solid;
-    text-decoration-color: rgba(255, 255, 255, 0.8);
-}
-
-.section-divider {
-    max-width: 600px;
-    margin: 6rem auto;
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -347,11 +314,11 @@ section .content a:hover {
         text-align: center;
     }
 
-    .approach-item {
+    section p {
         padding: 0.4rem 0;
     }
 
-    .approach-item:not(:last-child)::after {
+    section p:not(:last-child)::after {
         width: 40px;
     }
 
