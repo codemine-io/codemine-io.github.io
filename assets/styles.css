@@ -77,7 +77,16 @@ main p {
 }
 
 section {
-    opacity: 0.4;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    opacity: 0.1;
+    transition: opacity 0.5s ease;
+}
+
+section.visible {
+    opacity: 1;
 }
 
 .highlight {
@@ -92,13 +101,6 @@ hr.section-divider {
     padding: 0;
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
 }
 
 section h2 {
