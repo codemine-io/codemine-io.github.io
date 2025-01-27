@@ -81,11 +81,14 @@ section {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+}
+
+main, section {
     opacity: 0.1;
     transition: opacity 0.5s ease;
 }
 
-section.visible {
+main.visible, section.visible {
     opacity: 1;
 }
 
