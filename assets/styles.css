@@ -7,6 +7,7 @@
     --highlight-color: #c8ffe9;
     --button-gradient: linear-gradient(135deg, #009577, #00a88a);
     --button-hover-gradient: linear-gradient(135deg, #00b894, #00cca4);
+    --error-color: #ff6b6b;
 }
 
 body {
