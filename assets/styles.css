@@ -42,15 +42,19 @@ body {
     font-weight: 400;
 }
 
-main {
+main,
+section {
     max-width: 800px;
-    margin: 12rem auto;
     padding: 0 2rem;
     text-align: center;
+}
+
+main {
+    margin: 12rem auto;
     opacity: 0.9;
 }
 
-main h1 {
+h1 {
     font-size: 5.5rem;
     margin-bottom: 1.5rem;
     color: var(--brighter-text-color);
@@ -78,18 +82,17 @@ main p {
 }
 
 section {
-    max-width: 800px;
     margin: 0 auto;
-    padding: 0;
-    text-align: center;
 }
 
-main, section {
+main,
+section {
     opacity: 0.1;
     transition: opacity 0.5s ease;
 }
 
-main.visible, section.visible {
+main.visible,
+section.visible {
     opacity: 1;
 }
 
@@ -145,10 +148,6 @@ section a:hover {
     text-decoration-color: rgba(255, 255, 255, 0.8) hover underline;
 }
 
-.contact-section {
-    margin: 4rem auto;
-}
-
 .team-member {
     max-width: 600px;
     margin: 0 auto;
@@ -174,7 +173,6 @@ section a:hover {
 .team-member p {
     font-size: 1.4rem;
     line-height: 0.6;
-    
 }
 
 .contact-form {
@@ -285,20 +283,34 @@ button:hover::after {
     height: 24px;
     vertical-align: middle;
 }
+.highlight {
+    white-space: nowrap;
+}
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
-    .contact-form {
-        flex-direction: column;
-        max-width: 100%;
-        padding: 0;
+    hr.section-divider {
+        /* margin: auto 0.2rem; */
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    main p,
+    section p {
+        font-size: 1.6rem;
+        margin-top: 0rem;
+        margin-bottom: 0.8rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
     }
 
     button {
@@ -310,67 +322,5 @@ button:hover::after {
 
     .top-notch {
         justify-content: flex-start;
-    }
-
-    .approach {
-        margin: 3rem auto;
-    }
-
-    .approach-title {
-        font-size: 2rem;
-        margin-bottom: 1.2rem;
-    }
-
-    section .content {
-        font-size: 1.1rem;
-        padding: 0;
-        text-align: center;
-    }
-
-    section p {
-        padding: 0.4rem 0;
-    }
-
-    section p:not(:last-child)::after {
-        width: 40px;
-    }
-
-    main {
-        margin: 5rem auto;
-    }
-
-    .team {
-        margin: 4rem auto;
-    }
-
-    .team-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .member-name {
-        font-size: 1.5rem;
-    }
-
-    .member-role,
-    .member-bio {
-        font-size: 1.1rem;
-    }
-
-    .section-divider {
-        margin: 4rem auto;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .team-member {
-        padding-top: 0.3rem;
-    }
-
-    .vision p {
-        font-size: 1.1rem;
-        margin-bottom: 1.2rem;
     }
 }
