@@ -45,7 +45,7 @@ body {
 main,
 section {
     max-width: 800px;
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: center;
 }
 
@@ -172,7 +172,6 @@ section a:hover {
 
 .team-member p {
     font-size: 1.4rem;
-    line-height: 0.6;
 }
 
 .contact-form {
@@ -297,11 +296,16 @@ button:hover::after {
     }
 
     hr.section-divider {
-        /* margin: auto 0.2rem; */
         margin-left: 2rem;
         margin-right: 2rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
     }
 
+    main {
+        margin:6rem auto;
+    }
+    
     main p,
     section p {
         font-size: 1.6rem;
