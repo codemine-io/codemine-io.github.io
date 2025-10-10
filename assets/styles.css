@@ -40,6 +40,13 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.logo-svg {
+    height: 32px;
+    width: auto;
 }
 
 main,
