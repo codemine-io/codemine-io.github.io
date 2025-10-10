@@ -1,9 +1,3 @@
-// Form
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('The website is under development and this form does not work yet. Sorry. In the meantime you can contact us thru X: https://x.com/NikitaYVolkov');
-});
-
 // Scroll animations
 (function () {
     const sections = document.querySelectorAll('section, main');
