@@ -105,8 +105,12 @@ section.visible {
 
 .highlight {
     color: var(--highlight-color);
-    font-weight: 500;
+    font-weight: 300;
     opacity: 0.95;
+}
+
+h1 .highlight {
+    font-weight: 500;
 }
 
 hr.section-divider {
